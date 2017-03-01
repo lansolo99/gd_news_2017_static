@@ -358,10 +358,10 @@ $(document)
 
 
     if(isTouchDevice()==true){
-      $(".tag-filter .ui.dropdown .icon").css('pointer-events','none');
+      // $(".tag-filter .ui.dropdown .icon").css('pointer-events','none');
 
     }else{
-      $(".tag-filter .ui.dropdown .icon").css('pointer-events','auto');
+      // $(".tag-filter .ui.dropdown .icon").css('pointer-events','auto');
       $(".tag-filter .ui.dropdown .disableToggle, .tag-filter .ui.dropdown .default.text").click(function(e) {
          e.stopPropagation();
       });

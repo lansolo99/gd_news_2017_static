@@ -370,16 +370,17 @@
         background-color: $color-white;
         margin-right: -14px;
         transition: background 0.2s ease;
-
+        pointer-events: none;
 
         &:active{
             background-color: $color-green;
         }
 
         &.hoverEffect{
+          pointer-events: auto;
           &:hover{
               background-color: $color-green;
-              
+
               &::before{
                 color: $color-white;
               }
