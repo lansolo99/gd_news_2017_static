@@ -970,7 +970,7 @@ header.top-bar{
     }
 
    .ui.stackable.grid{
-
+    background-color: $color-green-dark;
     .column{
       padding: 0 !important;
     }
@@ -1013,10 +1013,18 @@ header.top-bar{
         }
       }
 
-      .exit{
+      a.exit{
+        &:hover{
+          text-decoration: none;
+          color: $color-green;
+        }
         display: block;
         margin-top: 30px;
         margin-bottom: 30px;
+      }
+
+      .ui.basic.inverted.button.hoverEffect:hover{
+        color: $color-green !important;
       }
 
      }

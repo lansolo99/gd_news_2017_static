@@ -143,6 +143,13 @@ $(document)
       // Update doc width
       docWidth = jQuery(window).width();
 
+
+      //dead-end height recalc
+      if('.dead-end'.length > 1){
+        $('body').css('background-color','#063233');
+      }
+
+
       // Search Form
       if(currentScreen!='mobile'){
         searchWrapperWidth = parseInt(docWidth-237);
@@ -358,10 +365,8 @@ $(document)
 
 
     if(isTouchDevice()==true){
-      // $(".tag-filter .ui.dropdown .icon").css('pointer-events','none');
 
     }else{
-      // $(".tag-filter .ui.dropdown .icon").css('pointer-events','auto');
       $(".tag-filter .ui.dropdown .disableToggle, .tag-filter .ui.dropdown .default.text").click(function(e) {
          e.stopPropagation();
       });
