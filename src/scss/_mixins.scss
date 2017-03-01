@@ -665,6 +665,7 @@
     i.dropdown.icon{
       top:19px;
       right: 35px;
+      pointer-events: none;
 
       &::before{
         font-family: $icomoon;
