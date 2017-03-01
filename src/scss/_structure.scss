@@ -904,6 +904,7 @@ header.top-bar{
               &.sidebar{
                 background-color: transparent;
                 @include post-sidebar;
+                overflow: visible;
 
                 @include responsive (mobile){
                   height: 54px;

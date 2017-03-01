@@ -399,7 +399,7 @@ $(document)
         $(this).prev().toggleClass('active');
     });
 
-
+    // Form display submit button
     var commentFormFields = $(".ui.form.comment-form :input").not('#url');
     commentFormFields.keyup(function() {
         // empty inputs
