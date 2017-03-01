@@ -379,11 +379,13 @@
         &.hoverEffect{
           &:hover{
               background-color: $color-green;
+              
+              &::before{
+                color: $color-white;
+              }
           }
 
-          &::before{
-            color: $color-white;
-          }
+
         }
 
         &::before{
