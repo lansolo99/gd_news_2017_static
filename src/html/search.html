@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Meta -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<!-- Site Properties -->
+<title>News.Gandi.net - search@ template</title>
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="../images/favicon.png">
+
+<!--build:css ../css/styles.min.css -->
+<link rel="stylesheet" href="../css/semantic.css">
+<link rel="stylesheet" href="../css/style.css">
+<!--endbuild-->
+
+<!--build:js ../js/jquery+enquire.min.js -->
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/enquire.min.js"></script>
+<!--endbuild-->
+</head>
+
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="ui sidebar inverted vertical menu">
+
+  <div class="inner">
+  <!-- Produits -->
+  <div class="produits">
+    <a class="item home apart"><span>Homepage news</span></a>
+    <a class="item domain"><span>Domain Names</span></a>
+    <a class="item hosting"><span>Simple Hosting</span></a>
+    <a class="item cloud"><span>Cloud</span></a>
+    <a class="item security"><span>Security</span></a>
+    <a class="item company apart"><span>Company</span></a>
+    <a class="item promos apart"><span>Promotions</span></a>
+  </div>
+  <!-- Lang selector -->
+  <div class="language">
+    <div class="ui selection fluid dropdown">
+      <input type="hidden" name="English">
+      <i class="dropdown icon"></i>
+      <div class="default text">English</div>
+      <div class="menu">
+        <div class="item" data-value="1">English</div>
+        <div class="item" data-value="2">French</div>
+        <div class="item" data-value="3">Chinese</div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="footer">
+    <a class="item"><span>Gandi.net</span></a>
+    <a class="item"><span>Admin</span></a>
+    <a class="item"><span>Shop</span></a>
+    <a class="item"><span>Support</span></a>
+  </div>
+
+</div>
+</div>
+
+<!-- PUSHER -->
+<div class="pusher">
+  <!-- Header -->
+  <header class="top-bar">
+    <div class="menu-toggle hoverEffect"><button class="menu-button"><span>Menu</span></button></div>
+    <a class="logo" href="#"><img src="../images/logo_gandi_news.svg" alt="Gandi"></a>
+    <!-- Form -->
+    <div class="search-wrapper">
+      <form role="search" method="get" class="search-form" action="">
+          <label>
+              <input type="search" class="search-field"
+                  placeholder="Type your search here and press enter to validate"
+                  value="" name="s"
+                  title="" />
+          </label>
+          <!--   <input type="submit" class="search-submit"
+            value="" /> -->
+      </form>
+      <div class="form-toggle">
+        <div class="icon-search"></div>
+        <div class="icon-close"></div>
+
+        </div>
+      </div>
+
+    <!-- end search wrapper -->
+
+  </header>
+
+
+  <!-- Main -->
+  <div class="main">
+
+    <!-- Feature post -->
+    <div class="top-heading">
+
+    <div class="ui two columns stackable grid container search">
+      <div class="twelve wide column search-infos">
+        <p><span class="search-return">Votre recherche "Bar de Gandi" a donné </span><span>44 résultats</span></p>
+      </div>
+      <div class="four wide column search-selection">
+        <div class="ui selection fluid dropdown">
+          <input type="hidden" name="Changer la catégorie">
+          <i class="dropdown icon"></i>
+          <div class="default text">9 résultats</div>
+          <div class="menu">
+            <div class="item" data-value="1">9 résultats</div>
+            <div class="item" data-value="2">45 résultats</div>
+            <div class="item" data-value="3">90 résultats</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Posts-Grid -->
+    <div class="posts-grid">
+
+      <div class="ui equal width stackable grid container">
+
+        <!-- Mobile layout (filterOnly) -->
+        <div class="row sidebar-coupled mobile">
+          <div class="column sidebar">
+          </div>
+        </div>
+
+        <!-- Tablet layout -->
+        <div class="row sidebar-coupled tablet">
+          <div class="column 2slots">
+            <!-- <div class="card"></div> -->
+            <!-- <div class="card"></div> -->
+          </div>
+          <div class="column sidebar">
+          </div>
+        </div>
+
+        <!-- DesktopSmall & Desktop layout -->
+        <div class="row sidebar-coupled desktopSmallAndDesktop">
+          <div class="column 2slots">
+
+            <!-- CARD TEMPLATE // DO NOT ERASE -->
+
+            <!-- <div class="card domain promo">
+              <div class="infos">
+              <img src="../images/content/feature-thumbnail-xyx.jpg" srcset="../images/content/feature-thumbnail-xyx.jpg 1x, ../images/content/feature-thumbnail-xyx_@2x.jpg 2x" alt="xyz">
+                <div class="description">
+                  <h2><span>PROMO: .XYZ</span></h2>
+                  <div class="meta">
+                    <p>
+                      <span class="date">23.12.2016</span>&nbsp;-&nbsp;
+                      <span class="time">13:37</span>,&nbsp;written by&nbsp;
+                      <span class="author"><a href="#">Gandi.net</a></span>
+                    </p>
+                  </div>
+                  <div class="excerpt">
+                    <p>Les enregistrements multiannées des domaines en .TECH sont en promotions jusqu’au 31 janvier 2017.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="fluid ui right labeled icon button card-cta">Read More<i class="right icon icon-arrow-post"></i></button>
+            </div> -->
+
+            <!-- END CARD TEMPLATE -->
+
+            <!-- <div class="card"></div> -->
+          </div>
+          <div class="column 2slots">
+          <!--   <div class="card"></div>
+          <div class="card"></div> -->
+          </div>
+          <div class="column sidebar">
+            <div class="card sidebar">
+              <div class="tag-filter">
+
+                <div class="ui selection fluid dropdown">
+                  <div class="disableToggle"></div>
+                  <i class="dropdown icon icon-arrow-post"></i>
+                  <div class="default text">Filtres</div>
+                  <div class="menu">
+                    <div class="item">
+
+                      <div class="inline field">
+                        <div class="ui checkbox">
+                          <input type="checkbox" tabindex="0" class="hidden">
+                          <label><span>Promotions</span></label>
+                          <div class="disableCheck"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="inline field">
+                        <div class="ui checkbox">
+                          <input type="checkbox" tabindex="0" class="hidden">
+                          <label><span>News</span></label>
+                          <div class="disableCheck"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="inline field">
+                        <div class="ui checkbox">
+                          <input type="checkbox" tabindex="0" class="hidden">
+                          <label><span>Community</span></label>
+                          <div class="disableCheck"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="inline field">
+                        <div class="ui checkbox">
+                          <input type="checkbox" tabindex="0" class="hidden">
+                          <label><span>Articles</span></label>
+                          <div class="disableCheck"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="posts-list">
+                <h2>Articles populaires</h2>
+                <ul>
+                  <li class="domain standard">
+                      <div class="description">
+                        <a href="#"><h3 class="title"><span>PROMO: .XYZ</span></h3></a>
+                        <div class="meta">
+                          <p>
+                            <span class="date">23.12.2016</span>&nbsp;-&nbsp;
+                            <span class="time">13:37</span>,&nbsp;written by&nbsp;
+                            <span class="author"><a href="#">Gandi.net</a></span>
+                          </p>
+                        </div>
+                        <div class="excerpt">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.</p>
+                          <a href="#">Read more.</a>
+                        </div>
+                      </div>
+                  </li>
+                  <li class="company standard">
+                    <div class="description">
+                      <a href="#"><h3 class="title"><span>PROMO: .XYZ</span></h3></a>
+
+                      <div class="meta">
+                        <p>
+                          <span class="date">23.12.2016</span>&nbsp;-&nbsp;
+                          <span class="time">13:37</span>,&nbsp;written by&nbsp;
+                          <span class="author"><a href="#">Gandi.net</a></span>
+                        </p>
+                      </div>
+                      <div class="excerpt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.</p>
+                        <a href="#">Read more.</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="hosting new">
+                    <div class="description">
+                      <a href="#"><h3 class="title"><span>PROMO: .XYZ</span></h3></a>
+
+                      <div class="meta">
+                        <p>
+                          <span class="date">23.12.2016</span>&nbsp;-&nbsp;
+                          <span class="time">13:37</span>,&nbsp;written by&nbsp;
+                          <span class="author"><a href="#">Gandi.net</a></span>
+                        </p>
+                      </div>
+                      <div class="excerpt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.</p>
+                        <a href="#">Read more.</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="security golive">
+                    <div class="description">
+                      <a href="#"><h3 class="title"><span>PROMO: .XYZ</span></h3></a>
+
+                      <div class="meta">
+                        <p>
+                          <span class="date">23.12.2016</span>&nbsp;-&nbsp;
+                          <span class="time">13:37</span>,&nbsp;written by&nbsp;
+                          <span class="author"><a href="#">Gandi.net</a></span>
+                        </p>
+                      </div>
+                      <div class="excerpt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.</p>
+                        <a href="#">Read more.</a>
+                      </div>
+                    </div>
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- DesktopLarge layout -->
+        <div class="row sidebar-coupled desktopLarge">
+          <div class="column 2slots">
+            <!-- <div class="card"></div> -->
+            <!-- <div class="card"></div> -->
+          </div>
+          <div class="column 2slots">
+          <!--   <div class="card"></div>
+          <div class="card"></div> -->
+          </div>
+          <div class="column 2slots">
+            <!-- <div class="card"></div>
+            <div class="card"></div> -->
+          </div>
+          <div class="column sidebar">
+
+          </div>
+        </div>
+
+        <!-- Generic layout -->
+        <div class="three columns row remaining-post">
+          <div class="column">
+            <!-- <div class="card"></div> -->
+          </div>
+          <div class="column">
+            <!-- <div class="card"></div> -->
+          </div>
+          <div class="column">
+            <!-- <div class="card"></div> -->
+          </div>
+          <div class="column">
+            <!-- <div class="card"></div> -->
+          </div>
+          <div class="column">
+            <!-- <div class="card"></div> -->
+          </div>
+          <div class="column">
+            <!-- <div class="card"></div> -->
+          </div>
+          <div class="column">
+            <!-- <div class="card"></div> -->
+          </div>
+          <div class="column">
+            <!-- <div class="card"></div> -->
+          </div>
+          <div class="column">
+            <!-- <div class="card"></div> -->
+          </div>
+        </div>
+
+      <!-- Mobile layout (PopularOnly) -->
+          <div class="row sidebar-popular mobile">
+            <div class="column sidebar">
+              <div class="card sidebar2">
+
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+      <div class="pagination wrapper">
+        <div class="ui pagination menu">
+          <a class="active item">1</a>
+          <a class="item">
+            2
+          </a>
+          <a class="item">
+            3
+          </a>
+          <a class="item">
+            4
+          </a>
+          <div class="disabled item">
+            ...
+          </div>
+          <a class="item">
+            7
+          </a>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+<!-- JS dependencies -->
+
+<!--build:js ../js/main.min.js -->
+<script src="../js/velocity.min.js"></script>
+<script src="../js/velocity.ui.min.js"></script>
+<script src="../js/modernizr-custom.js"></script>
+<script src="../js/semantic.js"></script>
+<script src="../js/style.js"></script>
+<script src="../js/classie.js"></script>
+<!-- <script src="../js/sidebar.js"></script> -->
+
+<!-- endbuild -->
+
+</body>
+</html>

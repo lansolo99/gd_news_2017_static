@@ -1,0 +1,167 @@
+/*******************************
+           Globals
+*******************************/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $montserrat-light;
+  background-color: $color-grey-light;
+  font-size: 16px;
+  line-height: 3em;
+  color: $color-anthracite;
+}
+
+a{
+  color: $color-green;
+  &:hover{
+    text-decoration: underline;
+    color: $color-green;
+  }
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $montserrat-regular;
+  line-height: 1.2857em;
+  margin: calc(2rem -  0.14285em ) 0em 1rem;
+  font-weight: normal;
+  padding: 0em;
+}
+
+
+p{
+  font-family: $montserrat-light;
+}
+
+
+.ui.segment{
+  border-radius:0;
+  margin:0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 1199px){
+  .ui.grid.container {
+      width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .ui.grid.container {
+      width: calc( 2000px + 2rem ) !important;
+  }
+
+  .article-grid{
+    .ui.grid.container {
+        width: calc( 1290px + 2rem ) !important;
+    }
+  }
+}
+
+
+
+
+
+
+.ui.basic.inverted.button{
+  font-family: $montserrat-light;
+  font-size: 15px;
+  padding: 19px 40px 15px 40px  ;
+  border: 1px solid #ffffff !important;
+  box-shadow: none !important;
+
+  &:focus{
+    box-shadow: none !important;
+  }
+
+  &:active{
+    color: $color-featured-post !important;
+    background-color: $color-white !important;
+    box-shadow: none !important;
+    border: 1px solid #ffffff !important;
+  }
+
+  &.hoverEffect{
+    &:hover  {
+      color: $color-featured-post !important;
+      background-color: $color-white !important;
+      box-shadow: none !important;
+      border: 1px solid #ffffff !important;
+    }
+  }
+
+}
+
+.ui.fluid.button.card-cta{
+
+  &.labeled.icon{
+    padding-left: 20px !important;
+    .icon{
+      right: 8px;
+      background-color: transparent;
+      &::before{
+        font-size: 22px;
+        color: $color-green;
+      }
+    }
+  }
+
+
+  font-family: $montserrat-regular;
+  text-align: left;
+  color: $color-anthracite;
+  font-size: 18px;
+  padding: 20px;
+  border: none !important;
+  border-top:1px solid $color-grey-light !important;
+  box-shadow: none !important;
+  border-radius: 0;
+  background-color: $color-white;
+
+
+  &:active  {
+    color: $color-white !important;
+    background-color: $color-green !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-top:1px solid $color-grey-light !important;
+
+    &.labeled.icon{
+      .icon{
+
+        &::before{
+
+          color: $color-white;
+        }
+      }
+    }
+  }
+
+  &.hoverEffect{
+    &:hover  {
+      color: $color-white !important;
+      background-color: $color-green !important;
+      box-shadow: none !important;
+      border: none !important;
+      border-top:1px solid $color-grey-light !important;
+
+      &.labeled.icon{
+        .icon{
+
+          &::before{
+
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+
+}

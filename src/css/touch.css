@@ -1,0 +1,5 @@
+/* Touch devices only */
+
+.ui.sidebar.inverted.menu .inner{
+  width: 270px;
+}
