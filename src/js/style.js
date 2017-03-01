@@ -357,18 +357,20 @@ $(document)
     ;
 
 
+    if(isTouchDevice()==true){}else{
+      $(".tag-filter .ui.dropdown .disableToggle, .tag-filter .ui.dropdown .default.text").click(function(e) {
+         e.stopPropagation();
+      });
 
-    $(".tag-filter .ui.dropdown .disableToggle, .tag-filter .ui.dropdown .default.text").click(function(e) {
-       e.stopPropagation();
-    });
+      $(".tag-filter .ui.dropdown .disableCheck").hover(function(e) {
+         e.stopPropagation();
+      });
 
-    $(".tag-filter .ui.dropdown .disableCheck").hover(function(e) {
-       e.stopPropagation();
-    });
+      $(".tag-filter .ui.dropdown .disableCheck").click(function(e) {
+         e.stopPropagation();
+      });
+    }
 
-    $(".tag-filter .ui.dropdown .disableCheck").click(function(e) {
-       e.stopPropagation();
-    });
 
 
 
