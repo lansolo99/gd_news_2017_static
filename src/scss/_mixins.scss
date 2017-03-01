@@ -649,6 +649,7 @@
       border: none;
       background-color: shade( $color-featured-post, 50% );
       box-shadow: none;
+      max-height: none;
 
       .item{
         border-top:none;

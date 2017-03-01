@@ -105,7 +105,6 @@ $(document)
 
     if(isTouchDevice()==true){
       console.log(currentScreen);
-      alert('is a touch device');
       $('head').append('<link rel="stylesheet" type="text/css" href="../css/touch.css">');
       if(currentScreen =='mobile' || currentScreen =='tablet' || currentScreen =='desktop-small' ){
         // $('head').append('<link rel="stylesheet" type="text/css" href="../css/touch.css">');
