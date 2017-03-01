@@ -964,7 +964,10 @@ header.top-bar{
    height: calc(100vh - 50px);
    margin-bottom: 0;
    padding: 0;
-   overflow: hidden;
+   /* overflow: hidden; */
+    @include responsive(tablet){
+      height : auto;
+    }
 
    .ui.stackable.grid{
 
@@ -1013,27 +1016,14 @@ header.top-bar{
       .exit{
         display: block;
         margin-top: 30px;
+        margin-bottom: 30px;
       }
 
      }
 
      .column.illustration{
-
-      /* position: relative; */
-
-      /* @media only screen and (max-width: 449px){
-        top: -80px;
-      } */
-
-      /* @media only screen and (min-width: 450px) and (max-width: 767px){
-        top: -140px;
-      } */
-
        img{
         width: 100%;
-        /* position: relative; */
-
-
       }
 
      }
