@@ -107,9 +107,9 @@ $(document)
       console.log(currentScreen);
       $('head').append('<link rel="stylesheet" type="text/css" href="../css/touch.css">');
       if(currentScreen =='mobile' || currentScreen =='tablet' || currentScreen =='desktop-small' ){
-        // $('head').append('<link rel="stylesheet" type="text/css" href="../css/touch.css">');
+        //
       }
-
+      $('.tag-filter .ui.dropdown .icon').removeClass('hoverEffect');
       $('.menu-toggle').removeClass('hoverEffect');
     }else{
       $.each( $('.ui.basic.inverted.button'), function(){
