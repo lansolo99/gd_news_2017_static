@@ -293,7 +293,6 @@ $(document)
 
       $('.search-wrapper .form-toggle').off( "mouseenter mouseleave" );
 
-
       //Search is not open yet > go visible
       if(!isSearchOpen){
 

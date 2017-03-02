@@ -115,6 +115,7 @@ p{
 
 
   font-family: $montserrat-regular;
+  font-weight: 400;
   text-align: left;
   color: $color-anthracite;
   font-size: 18px;
@@ -151,6 +152,7 @@ p{
       box-shadow: none !important;
       border: none !important;
       border-top:1px solid $color-grey-light !important;
+      font-weight: 400;
 
       &.labeled.icon{
         .icon{

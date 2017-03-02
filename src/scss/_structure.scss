@@ -415,7 +415,7 @@ header.top-bar{
         opacity: 0;
         background-color: rgba($color-black, 0.2);
         color: $color-white;
-        padding: 0px 20px;
+        padding: 0px 20px 0px 20px;
         font-size: 15px;
         transition: opacity 0.2s ease;
 
@@ -430,6 +430,7 @@ header.top-bar{
           opacity:1;
         }
         &.open{
+          padding: 0px 60px 0px 20px;
           &::-webkit-input-placeholder{opacity: 1; color: $color-white;}
           &::-moz-placeholder{opacity: 1; color: $color-white;}
           &:-ms-input-placeholder{opacity: 1; color: $color-white;}
@@ -1146,10 +1147,13 @@ header.top-bar{
                         font-size: 15px;
                         height: 50px;
                         color: $color-grey-dark;
+                        transition: box-shadow .2s;
 
 
                         &:focus{
-                          border-color: $color-grey-dark;
+                          outline: none;
+                          border: 1px solid rgba(34, 36, 38, 0.15);
+                          box-shadow: inset 0 2px 0 0 #333;
                         }
 
                       }
@@ -1157,9 +1161,12 @@ header.top-bar{
                       textarea{
                         height: 253px;
                         color: $color-grey-dark;
+                        transition: box-shadow .2s;
 
                         &:focus{
-                          border-color: $color-grey-dark;
+                          outline: none;
+                          border: 1px solid rgba(34, 36, 38, 0.15);
+                          box-shadow: inset 0 2px 0 0 #333;
                         }
                       }
 
@@ -1426,11 +1433,13 @@ header.top-bar{
                   b.fn{
                     font-family: $montserrat-regular;
                     font-size: 18px;
+                    font-weight: 400;
 
                     a{
                       text-decoration: none;
                       color: $color-anthracite;
                       transition: color 0.2s ease;
+
 
                       &:hover{
                         color: $color-green;

@@ -601,7 +601,11 @@
       &.next{span::before{content: "\e90d";}}
     }
 
-    &.active{
+    &:hover{
+
+    }
+
+    &.active, &:hover{
       background-color: $color-green;
       color: $color-white;
     }
