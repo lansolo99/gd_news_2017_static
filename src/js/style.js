@@ -9,7 +9,7 @@ $(document)
     var currentScreen;
     var tabletBreakpointShrinked;
     var columnSidebar = $('.posts-grid .column.sidebar');
-    var columnSidebarPopular = $('.posts-grid .column.sidebar .posts-list');
+    var columnSidebarPopular = $('.posts-grid .column.sidebar .posts-list-wrapper');
 
     var rowMobileFilter = $('.posts-grid .sidebar-coupled.mobile');
     var rowMobilePopular = $('.posts-grid .sidebar-popular.mobile');
@@ -21,7 +21,7 @@ $(document)
     var rowRemainingPostLastChild = $('.posts-grid .row.remaining-post .column:last-child');
 
     var cardSidebar = $('.posts-grid .card.sidebar');
-    var popularList = $('.posts-grid .posts-list');
+    var popularList = $('.posts-grid .posts-list-wrapper');
 
     var tagFilterDropdown = $('.tag-filter .ui.selection.fluid.dropdown');
     var commentRespondAccordion = $('.comment-respond-wrapper .ui.fluid.accordion');
